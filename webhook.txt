@@ -1,0 +1,30 @@
+~~~~~~~~~~~~~~~~webhook~~~~~~~~~~~~~~~
+
+step 1 : create one free style project.
+
+step 2 : click on scm and gitHib repository url.
+eg: https://github.com/AlthafHusen/src-pom.git
+
+step 3 : click on build triggers and choose GitHub hook trigger for GITScm polling.
+
+step 4 : open github repo which you are configured on jenkins.
+
+step 5 : click on settings and choose webhooks
+
+step 6 : click on add webhooks
+
+step 7 :click on payload url
+        syntax: <jenkins-url>/github-webhook
+eg: http://54.255.210.82:8080/github-webhook/
+
+step 8 :choose content type as 
+        application/jason
+
+step 9 :Which events would you like to trigger this webhook?
+         select Send me everything then add webhook.
+
+step 10:Go to jenkins select project which we created and click on GitHub hook log - since you didnt made any changes it shows there is no build or no changes updated.
+
+step 11: go to github -select your repo -add files -create file- write some code-commit file.
+
+step 12: go to jenkins now refresh to see the changes --time changes --status as changes found. 
